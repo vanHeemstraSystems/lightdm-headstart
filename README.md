@@ -22,3 +22,9 @@ $ /etc/init.d/dbus start
 If you see ```DEBUG: process XXXXX terminated with signal 6```, install SLIM as follows: https://ubuntuhandbook.org/index.php/2013/08/install-use-slim-login-manager-in-ubuntu/
 
 That has no dependencies to systemd and works fine with fast boots. Slim returns to login if starting X fails, lightdm does not.
+
+## Display Managers
+
+For Ubuntu 16.10+ the default is GDM, for 16.04 and earlier the default is LightDM.
+
+See https://askubuntu.com/questions/641642/gui-does-not-start
