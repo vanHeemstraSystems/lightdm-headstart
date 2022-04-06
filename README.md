@@ -36,40 +36,63 @@ See also "How to start GUI from command line?" at https://askubuntu.com/question
 Start by clicking Start and entering "turn windows". The Turn Windows Features on or off item should be displayed. Then scroll down to Windows Subsystem for Linux.
 
 Restart Windows.
+
 Open the Windows Store, search for Linux, and install Ubuntu.
+
 Once complete, click Launch from within the Windows Store or open it from the Start menu.
+
 On the first run, you'll be prompted to input a username and password to create a user account.
+
 Run these commands
+
 sudo apt update
+
 sudo apt upgrade
+
 While this upgrade is running, head to Sourceforge to download and install the VcXsrv Windows X Server utility (https://sourceforge.net/projects/vcxsrv/files/latest/download).
+
 Install the Linux desktop. Many Linux desktop environments (https://www.makeuseof.com/tag/best-linux-desktop-environments/) are available but to keep things simple we'll install LXDE:
+
 sudo apt install lxde
+
 Following installation of LXDE, input these commands:
 
 export DISPLAY=:0
+
 export LIBGL_ALWAYS_INDIRECT=1
 
 Open the Xlaunch tool, and choose One large window, and Display number: 0
+
 Click Next on the following pages until the end.
+
 Start the LXDE desktop environment
+
 startlxde
 
 Steps to start Ubuntu / LXDE every time.
 
 Open Ubuntu
+
 Enter these commands:
+
 export DISPLAY=:0
+
 export LIBGL_ALWAYS_INDIRECT=1
+
 Open the Xlaunch tool, and choose One large window, and Display number: 0
+
 Click Next on the following pages until the end.
+
 Start the LXDE desktop environment
+
 startlxde
 
 Note that it is not possible to damage Windows 10 using the Linux environment. Any commands you input will damage only the Windows Subsystem for Linux and the chosen operating system. Windows 10 will remain safe and secure.
 
-Sources
+*Sources*:
 
-How to Get the Linux Bash Shell on Windows 10 (https://www.makeuseof.com/tag/linux-bash-shell-on-windows-10/)
-How to Run a Linux Desktop Using the Windows Subsystem for Linux (https://www.makeuseof.com/tag/linux-desktop-windows-subsystem/)
-5 Linux Distros You Can Install in Windows Subsystem for Linux (https://www.makeuseof.com/linux-distros-for-windows-subsystem-for-linux/)
+- How to Get the Linux Bash Shell on Windows 10 (https://www.makeuseof.com/tag/linux-bash-shell-on-windows-10/)
+
+- How to Run a Linux Desktop Using the Windows Subsystem for Linux (https://www.makeuseof.com/tag/linux-desktop-windows-subsystem/)
+
+- 5 Linux Distros You Can Install in Windows Subsystem for Linux (https://www.makeuseof.com/linux-distros-for-windows-subsystem-for-linux/)
