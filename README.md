@@ -28,3 +28,5 @@ That has no dependencies to systemd and works fine with fast boots. Slim returns
 For Ubuntu 16.10+ the default is GDM, for 16.04 and earlier the default is LightDM.
 
 See https://askubuntu.com/questions/641642/gui-does-not-start
+
+See also "How to start GUI from command line?" at https://askubuntu.com/questions/168736/how-to-start-gui-from-command-line
